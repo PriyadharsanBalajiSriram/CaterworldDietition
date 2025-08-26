@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.diet-plan-content {
+    line-height: 1.7;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.diet-plan-content h1,
+.diet-plan-content h2,
+.diet-plan-content h3,
+.diet-plan-content h4 {
+    color: #198754;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.enhanced-plan {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #ffc107;
+}
+
+.profile-stat {
+    padding: 1rem 0;
+}
+
+.profile-stat h5 {
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.process-step {
+    padding: 1rem;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: #198754;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #198754 0%, #20c997 100%);
+    border: none;
+    padding: 12px 24px;
+    font-weight: 500;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #157347 0%, #1ba085 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+}
+
+#bmi-display {
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .btn,
+    .alert-info,
+    .alert-success,
+    footer {
+        display: none !important;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .card-header {
+        background: #f8f9fa !important;
+        color: #333 !important;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-stat {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

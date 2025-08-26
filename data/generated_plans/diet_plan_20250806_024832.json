@@ -1,0 +1,11 @@
+{
+  "BMI": 22.46,
+  "Height_in_cm": 174.0,
+  "Weight_in_kg": 68.0,
+  "Allergic_stuff": "dairy products",
+  "preferences": "weight loss and muscle gain",
+  "result_initial": "Error generating diet plan: 400 API key not valid. Please pass a valid API key. [reason: \"API_KEY_INVALID\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"generativelanguage.googleapis.com\"\n}\n, locale: \"en-US\"\nmessage: \"API key not valid. Please pass a valid API key.\"\n]",
+  "result_reflected": "Error in reflection: 400 API key not valid. Please pass a valid API key. [reason: \"API_KEY_INVALID\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"generativelanguage.googleapis.com\"\n}\n, locale: \"en-US\"\nmessage: \"API key not valid. Please pass a valid API key.\"\n]",
+  "generated_at": "20250806_024832",
+  "bmi_category": "Normal weight"
+}

@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}Diet Plan Form - AI Dietitian{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <h2 class="text-center mb-4">📋 Tell Us About Yourself</h2>
+        
+        <div class="card">
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('process_form') }}" id="dietForm">
+                    <!-- Height and Weight Inputs -->
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="height" class="form-label">Height (cm) *</label>
+                            <input type="number" class="form-control" id="height" name="height" 
+                                   min="100" max="250" step="0.1" required
+                                   placeholder="e.g., 170.5">
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="weight" class="form-label">Weight (kg) *</label>
+                            <input type="number" class="form-control" id="weight" name="weight" 
+                                   min="30" max="300" step="0.1" required
+                                   placeholder="e.g., 65.5">
+                        </div>
+                    </div>
+                    
+                    <!-- Real-time BMI Display -->
+                    <div class="mb-3">
+                        <label class="form-label">BMI Calculator:</label>
+                        <div id="bmi-display" class="alert alert-info text-center">
+                            <i class="fas fa-calculator me-2"></i>
+                            Enter your height and weight to see your BMI
+                        </div>
+                    </div>
+                    
+                    <!-- Allergies Input -->
+                    <div class="mb-3">
+                        <label for="allergies" class="form-label">
+                            <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                            Allergies & Food Restrictions
+                        </label>
+                        <textarea class="form-control" id="allergies" name="allergies" rows="3" 
+                                  placeholder="e.g., nuts, dairy, gluten, shellfish, vegetarian, vegan, etc."></textarea>
+                        <div class="form-text">Leave blank if no allergies or restrictions</div>
+                    </div>
+                    
+                    <!-- Preferences Input -->
+                    <div class="mb-3">
+                        <label for="preferences" class="form-label">
+                            <i class="fas fa-target text-success me-2"></i>
+                            Dietary Preferences & Health Goals *
+                        </label>
+                        <textarea class="form-control" id="preferences" name="preferences" rows="4" 
+                                  placeholder="e.g., weight loss, muscle gain, diabetes management, high energy meals, budget-friendly options, etc." 
+                                  required></textarea>
+                        <div class="form-text">Be specific about your goals and preferences for better recommendations</div>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-success btn-lg px-5" id="submitBtn">
+                            <span id="submitText">
+                                <i class="fas fa-magic me-2"></i>Generate My Personalized Diet Plan
+                            </span>
+                            <span id="loadingText" style="display: none;">
+                                <span class="spinner-border spinner-border-sm me-2"></span>
+                                AI is creating your plan...
+                            </span>
+                        </button>
+                        
+                        <div class="mt-3 text-muted">
+                            <small>This may take 30-60 seconds as our AI agents analyze your data</small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Process Info -->
+        <div class="row mt-4">
+            <div class="col-md-4 text-center mb-3">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h6>Calculate BMI</h6>
+                    <p class="text-muted small">Automatic health assessment</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-3">
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h6>Generate Plan</h6>
+                    <p class="text-muted small">AI creates initial diet plan</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-3">
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h6>Enhance & Refine</h6>
+                    <p class="text-muted small">Reflection agent improves plan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

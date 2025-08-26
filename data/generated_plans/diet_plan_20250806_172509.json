@@ -1,0 +1,11 @@
+{
+  "BMI": 22.15,
+  "Height_in_cm": 170.0,
+  "Weight_in_kg": 64.0,
+  "Allergic_stuff": "dairy",
+  "preferences": "weight loss",
+  "result_initial": "Error generating diet plan: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+  "result_reflected": "Error in reflection: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+  "generated_at": "20250806_172509",
+  "bmi_category": "Normal weight"
+}

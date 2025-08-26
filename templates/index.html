@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}AI Dietitian - Smart Nutrition Planning{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-4 text-success mb-4">🥗 AI Dietitian</h1>
+        <p class="lead mb-4">
+            Get personalized diet plans using advanced AI agents that consider your BMI, 
+            allergies, and dietary preferences to create the perfect nutrition plan for you.
+        </p>
+        
+        <div class="row mt-5">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h3>📊</h3>
+                        <h5 class="card-title">BMI Analysis</h5>
+                        <p class="card-text">Automatic BMI calculation and health category assessment</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h3>🤖</h3>
+                        <h5 class="card-title">AI-Powered</h5>
+                        <p class="card-text">Advanced LLM agents create personalized meal plans</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h3>🎯</h3>
+                        <h5 class="card-title">Personalized</h5>
+                        <p class="card-text">Considers allergies, preferences, and health goals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="{{ url_for('form') }}" class="btn btn-success btn-lg mt-4">
+            Get Your Diet Plan Now →
+        </a>
+    </div>
+</div>
+{% endblock %}
