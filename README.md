@@ -19,7 +19,7 @@ A smart Flask web application that uses LLM agents to create personalized diet p
 
 ### Installation
 
-1. Clone the repository:
+Clone the repository:
 
 
 
@@ -189,3 +189,4 @@ ai-dietitian/
 └── data/
 
     └── generated_plans/     ✓ Saved plans folder
+
