@@ -99,13 +99,13 @@ Click "Create API Key"
 
 Copy the generated API key
 
-5. Configure Environment Variables
+Configure Environment Variables
 Create .env file with:
 
 text
 GEMINI_API_KEY=your_actual_gemini_api_key_here
 SECRET_KEY=your_secret_key_for_flask_sessions
-6. Copy All Code Files
+ Copy All Code Files
 Copy all the code I provided into their respective files:
 
 Copy the app.py content
@@ -116,7 +116,7 @@ Copy the CSS and JavaScript files
 
 Copy all the service files
 
-7. Run the Application
+ Run the Application
 bash
 python app.py
 You should see output like:
@@ -124,7 +124,7 @@ You should see output like:
 text
  * Running on http://127.0.0.1:5000
  * Debug mode: on
-8. Open in Browser
+ Open in Browser
 Open your web browser and go to: http://localhost:5000
 
 
@@ -155,5 +155,6 @@ ai-dietitian/
 └── data/
 
     └── generated_plans/     ✓ Saved plans folder
+
 
 
