@@ -161,62 +161,6 @@ text
 8. Open in Browser
 Open your web browser and go to: http://localhost:5000
 
-How to Use the App
-Step 1: Home Page
-You'll see the welcome page with app features
-
-Click "Get Your Diet Plan Now"
-
-Step 2: Fill the Form
-Enter Height: e.g., 170 cm
-
-Enter Weight: e.g., 65 kg
-
-BMI will auto-calculate as you type
-
-Add Allergies: e.g., "nuts, dairy" (optional)
-
-Add Preferences: e.g., "weight loss, vegetarian, high protein"
-
-Click "Generate My Personalized Diet Plan"
-
-Step 3: View Results
-Initial Plan: First AI-generated diet plan
-
-Enhanced Plan: Improved version from reflection agent
-
-Download or copy your plan
-
-Quick Test Example
-Here's test data you can use:
-
-Height: 170 cm
-
-Weight: 70 kg
-
-Allergies: nuts, dairy
-
-Preferences: weight loss, vegetarian meals, high protein
-
-Troubleshooting
-Common Issues:
-API Key Error:
-
-text
-Error: API key not found
-Solution: Make sure .env file has correct GEMINI_API_KEY
-
-Module Not Found:
-
-text
-ModuleNotFoundError: No module named 'flask'
-Solution: Activate virtual environment and install requirements
-
-Import Errors:
-
-text
-ImportError: cannot import name 'State'
-Solution: Make sure all files are created with correct content
 
 File Structure Check:
 text
@@ -243,4 +187,5 @@ ai-dietitian/
 │   └── js/
 │       └── main.js          ✓ JavaScript
 └── data/
+
     └── generated_plans/     ✓ Saved plans folder
