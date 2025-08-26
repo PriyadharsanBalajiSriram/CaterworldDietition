@@ -51,40 +51,6 @@ Clone the repository:
 
 
 
-Key Changes Made:
-Single State Class: Removed UserInput class, using only State where:
-
-First 5 params are user inputs (BMI is calculated from height/weight)
-
-result_initial stores the first AI-generated plan
-
-result_reflected stores the enhanced/reflected plan
-
-Sequential Processing:
-
-Create state from user inputs with calculated BMI
-
-Fill result_initial with dietitian agent
-
-Fill result_reflected with reflection agent
-
-Cleaner Data Flow:
-
-User inputs → State creation → Initial generation → Reflection → Display
-
-BMI is automatically calculated and stored in state
-
-Enhanced UI:
-
-Real-time BMI calculation
-
-Better visual separation between initial and reflected plans
-
-Progress indicators during processing
-
-This structure maintains the exact State interface you specified while providing a complete AI dietitian application with modern web interface.
-
-how to see it working??
 How to Run the AI Dietitian App
 Here's a complete step-by-step guide to get the app running:
 
@@ -189,4 +155,5 @@ ai-dietitian/
 └── data/
 
     └── generated_plans/     ✓ Saved plans folder
+
 
